@@ -247,7 +247,7 @@ class MainActivity : Activity() {
             setPadding(0, dp(10), 0, dp(26))
         }
         content = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
-        scroll.addView(content, ScrollView.LayoutParams(-1, -2))
+        scroll.addView(content, ScrollGroup.LayoutParams(-1, -2))
         root.addView(scroll, LinearLayout.LayoutParams(-1, 0, 1f))
         val footer = TextView(this).apply {
             text = "LUMENWAVE  /  v1.0.0  /  ANDROID 10–16"
